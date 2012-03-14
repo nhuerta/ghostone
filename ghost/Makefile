@@ -2,7 +2,7 @@ SHELL = /bin/sh
 SYSTEM = $(shell uname)
 C++ = g++
 CC = gcc
-DFLAGS = -DGHOST_MYSQL
+DFLAGS = -DGHOST_MYSQL -DBOOST_FILESYSTEM_VERSION="2"
 OFLAGS = -O3
 LFLAGS = -L. -L../bncsutil/src/bncsutil/ -L../StormLib/stormlib/ -L/usr/local/lib/mysql -L/usr/local/include/ -L/usr/local/lib -ldl -lbncsutil -lpthread -lz -lStorm -lmysqlclient_r -lboost_date_time -lboost_thread -lboost_system -lboost_filesystem
 CFLAGS =

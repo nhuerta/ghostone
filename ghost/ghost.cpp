@@ -44,6 +44,7 @@
 #include <cstring>
 #include <signal.h>
 #include <stdlib.h>
+#include <time.h>
 
 #ifdef WIN32
  #include <ws2tcpip.h>		// for WSAIoctl
